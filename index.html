@@ -1135,7 +1135,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
           </select>
         </div>
         <div class="fgrp"><label class="flbl" for="msg">Project Details</label><textarea class="fta" id="msg" placeholder="Tell us about your project: requirements, capacity needs, timeline..."></textarea></div>
-        <button id="sbtn" type="submit" class="btnp" style="width:100%;justify-content:center;cursor:pointer;font-family:var(--fb)">Send Enquiry →</button>
+        <button id="sbtn" type="submit" class="btnp" style="width:100%;justify-content:center;cursor:pointer;font-family:var(--fb)">Send Inquiry →</button>
       </form>
     </div>
   </div>
@@ -1505,7 +1505,7 @@ document.getElementById('cform').addEventListener('submit',function(e){
   btn.disabled=true;
   this.querySelectorAll('.fi,.fta').forEach(i=>{i.style.borderColor='rgba(255,255,255,.22)';i.style.background='rgba(255,255,255,.06)'});
   setTimeout(()=>{
-    btn.textContent='Send Enquiry →';btn.style.opacity='';btn.disabled=false;
+    btn.textContent='Send Inquiry →';btn.style.opacity='';btn.disabled=false;
     this.reset();
     this.querySelectorAll('.fi,.fta').forEach(i=>{i.style.borderColor='';i.style.background='';});
   },4000);
