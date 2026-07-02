@@ -644,7 +644,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
      MOBILE MENU
 ───────────────────────────────────────── -->
 <div class="mobmenu" id="mobmenu">
-  <a href="index.html" onclick="closeMob();goTo(event,'index.html')">Home</a>
+  <a href="#top" onclick="event.preventDefault();closeMob();window.scrollTo({top:0,behavior:'smooth'})">Home</a>
   <a href="#services" onclick="closeMob()">Services</a>
   <a href="#products" onclick="closeMob()">Products</a>
   <a href="#industries" onclick="closeMob()">Industries</a>
@@ -661,9 +661,9 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
      NAV
 ───────────────────────────────────────── -->
 <nav id="nav">
-  <a href="index.html" class="nlogo" onclick="goTo(event,'index.html')"><img src="images/pel-logo.png" alt="Perfect Engineering"/></a>
+  <a href="#top" class="nlogo" onclick="event.preventDefault();window.scrollTo({top:0,behavior:'smooth'})"><img src="images/pel-logo.png" alt="Perfect Engineering"/></a>
   <ul class="nlinks">
-    <li><a href="index.html" onclick="goTo(event,'index.html')">Home</a></li>
+    <li><a href="#top" onclick="event.preventDefault();window.scrollTo({top:0,behavior:'smooth'})">Home</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#products">Products</a></li>
     <li><a href="#industries">Industries</a></li>
